@@ -1,0 +1,27 @@
+@import 'variables';
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-vue/src/index.scss';
+
+.pointer {
+  cursor: pointer !important;
+}
+
+.append-item-active {
+  animation: append-in .5s;
+}
+
+.append-leave-active {
+  animation: append-in .5s reverse;
+}
+
+@keyframes append-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5
+  }
+  100% {
+    opacity: 1
+  }
+}
